@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sistema de Tickets - Unidad 3</title>
 
-  <!-- Bootstrap 5 CDN -->
+  <!-- Bootstrap 5 CDN --> <!-- ELEGIR DISEÑO                       __________________-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap-grid.css" rel="stylesheet">
 
   <!-- Vue 3 CDN (opcional) -->
@@ -35,7 +35,8 @@
               </div>
               <div class="mb-2">
                 <label class="form-label">Email</label>
-                <input v-model="form.email" class="form-control" type="text" />
+                <!-- Modificado para que indique que se debe usar la estructura del correo de text a email-->
+                <input v-model="form.email" class="form-control" type="email" />
                 <div v-if="errors.email" class="form-text text-danger">{{ errors.email }}</div>
               </div>
               <div class="mb-2">
